@@ -37,9 +37,11 @@ react-native link
 #####    如果你的 React Native 是通过 Cocoapods 来集成的则使用下面两个步骤来集成，注意： 使用 pod 就不要使用 react-native link 了，不然会有冲突。
 
 1. 在 Podfile 中添加如下代码:
-
+这里备注下，第二个pod，官方里面没有，iOS编译一直报错（我这里31个错误，都是找不到文件），找了半天也没找到，参考这个
+https://community.jiguang.cn/t/topic/29969 
 ```
 pod 'JPushRN', :path => '../node_modules/jpush-react-native'
+pod 'JCoreRN', :path => '../node_modules/jcore-react-native'
 ```
 
 2. 终端执行如下指令:
